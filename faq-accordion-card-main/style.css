@@ -1,0 +1,8 @@
+@import url('https://fonts.google.com/specimen/Kumbh+Sans');
+
+body {
+    height: 100vh;
+    background: linear-gradient(to right, #af67e9, #6565e7);
+    background-repeat: no-repeat;
+    font-family: 'kunbh Sans', sans-serif;
+}
