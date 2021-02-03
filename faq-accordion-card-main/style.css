@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2? family = Kumbh + Sans: wght @ 400; 700 & display = swap');
-
 body {
     height: 100vh;
     background: linear-gradient(to bottom, #af67e9, #6565e7);
@@ -7,10 +6,9 @@ body {
     font-family: 'kunbh Sans', sans-serif;
 }
 
-
-section {
+.accordion {
     height: 84vh;
-    width: 73vw;
+    width: 73%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,9 +16,39 @@ section {
     background-color: white;
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    
 }
 
-.accordion-item {
+
+.accordionOne {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 50%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin-left: 510px;
+}
+
+.active .accordionOne:hover{
+    background-color: #ccc;
+}
+
+.accordionOne::after {
+    content: '\003C';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-right: 5px;
+
+}
+.active::after {
+    content: '\003E';
+}
+/* .accordion-item {
     margin-left: 550px;    
 }
 .faq {
@@ -28,7 +56,7 @@ section {
     font-family: 'kunbh Sans';
     font-weight: 700; 
 }
-section .accordion-button { 
+div .accordion-button { 
     position: relative;
     display: flex;
     align-items: center;
@@ -39,6 +67,6 @@ section .accordion-button {
     border-radius: 0;
    
 }
-section .accordion-body {
+div .accordion-body {
     width: 79%; 
-}
+} */
